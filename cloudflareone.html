@@ -43,6 +43,36 @@ ul{
 li{ 
   list-style-type: none;
 }
+li {
+ display: block;
+ transition-duration: 0.5s;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
     .referer-warning h1 { font-size: 1.2rem; margin: 0; }
     .referer-warning a { color: #56bcf9; } /* $linkColorOnBlack */
   </style>
@@ -52,7 +82,11 @@ li{
   <div class="referer-warning">
     <h1>⚠️ Please, to enter ShulkerRoad Shop Website, use a VPN that connect to an allowed country (US or Europe) ⚠️</h1>
   </div>
-
+<nav role="navigation">
+<ul class="dropdown">
+<p>::CLOUDFLARE_ERROR_1000S_BOX::</p>
+</ul>
+</nav>
   <div id="result-iframe-wrap" role="main">
 
     <iframe
@@ -682,6 +716,6 @@ window.addEventListener(&quot;resize&quot;, handleResize, false);
       </iframe>
 
   </div>
-	    <p>::CLOUDFLARE_ERROR_1000S_BOX::</p>
+	    
 </body>
 </html>
