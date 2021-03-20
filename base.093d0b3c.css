@@ -92,7 +92,7 @@ main {
 
 main:before {
     animation: grain 8s steps(10) infinite;
-    background-image: url(noise.0c992c6e.png);
+    background-image: url(https://raw.githubusercontent.com/HyCore/hycore.github.io/main/noise.0c992c6e.png);
     content: "";
     height: 300%;
     left: -50%;
