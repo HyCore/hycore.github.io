@@ -74,6 +74,7 @@
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
+
   }
   </style>
 <style type="text/css" media="screen"> 
@@ -82,6 +83,24 @@ html,body{overflow:hidden;height:100%}.fullpage{padding-bottom:0;margin:0;displa
 
   <style>
     html { font-size: 15px; }
+    input {
+      display: none;
+    }
+    #cf-please-wait {
+      display: none;
+    }
+    #no-cookie-warning {
+      display: none;
+    }
+    #trk_captcha_js {
+      display: none;
+    }
+    #cf-captcha-bookmark {
+      display: none;
+    }
+    #cf-spinner-please-wait {
+      display: none;
+    }
     html, body { margin: 0; padding: 0; min-height: 100%; }
     body { height:100%; display: flex; flex-direction: column; }
     .referer-warning {
@@ -105,11 +124,11 @@ html,body{overflow:hidden;height:100%}.fullpage{padding-bottom:0;margin:0;displa
   <div class="referer-warning">
     <h1>⚠️ In order to continue you need to complete the cloudflare challenge. ⚠️</h1>
     <br>
-    <div class="popup" onclick="myFunction()">Click here and complete the challenge
-      <span class="popuptext" id="myPopup">::CAPTCHA_BOX::</span>
-    </div>
   </div>
-
+  <div class="popup" onclick="myFunction()">Click here and complete the challenge
+    <span class="popuptext" id="myPopup">::CAPTCHA_BOX::</span>
+  </div>
+</div>
 
   <div id="result-iframe-wrap" role="main">
 
@@ -738,7 +757,9 @@ window.addEventListener(&quot;resize&quot;, handleResize, false);
       sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation  allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" allowTransparency="true"
       allowpaymentrequest="true" allowfullscreen="true" class="result-iframe">
       </iframe>
-
+      <div class="popup" onclick="myFunction()">Click here and complete the challenge
+        <span class="popuptext" id="myPopup">::CAPTCHA_BOX::</span>
+      </div>
   </div>
 </body>
 </html>
