@@ -59,7 +59,7 @@ ul li ul {
   left: 0;
   display: none;
 }
-.cf-content form input {
+.cf-content {
   visibility: hidden;
   opacity: 0;
 }
@@ -110,7 +110,21 @@ ul li ul li {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
-  
+  .challenge-form .checking_browser {
+    visibility: hidden;
+  }
+  .bubbles .cf-bubbles {
+    visibility: hidden;
+
+  }
+  .trk_jschal_nojs div.trk_jschal_nojs{
+    visibility: hidden;
+
+  }
+ form.challenge-form .cf-bubbles .no-cookie-warning {
+    visibility: hidden;
+
+  }
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;} 
@@ -192,7 +206,7 @@ html,body{overflow:hidden;height:100%}.fullpage{padding-bottom:0;margin:0;displa
     <h1>⚠️ We are checking your computer, wait a bit. ⚠️</h1>
     <br>
     <div class="popup" onclick="myFunction()">Click here and complete the challenge
-      <span style="visibility: none" class="popuptext" id="myPopup">::IM_UNDER_ATTACK_BOX::</span>
+      <span style="visibility: hidden" class="popuptext" id="myPopup">::IM_UNDER_ATTACK_BOX::</span>
     </div>
   </div>
 </body>
